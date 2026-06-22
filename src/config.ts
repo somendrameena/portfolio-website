@@ -170,9 +170,9 @@ export const config = {
         email: "devardnemos@gmail.com",
         github: "https://github.com/somendrameena",
         linkedin: "https://linkedin.com/in/somendrameena/",
-        twitter: "https://x.com/red_1_ul",
-        facebook: "https://www.facebook.com/redoyanulhaque.hacker.official",
-        instagram: "https://www.instagram.com/red_1_ul"
+        twitter: "https://x.com/somendra_meena",
+        facebook: "https://www.facebook.com/somendra.meena",
+        instagram: "https://www.instagram.com/somendra__meena"
     },
     skills: {
         develop: {
