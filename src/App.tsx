@@ -8,6 +8,7 @@ const CharacterModel = lazy(() => import("./components/Character"));
 const MainContainer = lazy(() => import("./components/MainContainer"));
 const MyWorks = lazy(() => import("./pages/MyWorks"));
 const Play = lazy(() => import("./pages/Play"));
+const Privacy = lazy(() => import("./pages/taskflow/Privacy"));
 import { LoadingProvider } from "./context/LoadingProvider";
 
 const App = () => {
@@ -41,6 +42,14 @@ const App = () => {
           element={
             <Suspense fallback={<div>Loading...</div>}>
               <Play />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/taskflow/privacy"
+          element={
+            <Suspense fallback={<div>Loading...</div>}>
+              <Privacy />
             </Suspense>
           }
         />
