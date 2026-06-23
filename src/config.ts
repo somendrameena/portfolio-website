@@ -188,16 +188,36 @@ export const config = {
     },
     skills: {
         develop: {
-            title: "AI DEVELOPER",
-            description: "Building intelligent systems & AI solutions",
-            details: "Developing AI agents, chatbots, and machine learning models using Python, TensorFlow, and PyTorch. Specializing in LLMs, NLP, deep learning, and autonomous systems.",
-            tools: ["Python", "TensorFlow", "PyTorch", "OpenCV", "Scikit-learn", "LLMs", "NLP", "Deep Learning", "Chatbots", "AI Agents"]
+            title: "SOFTWARE",
+            description: "Web Development, Mobile Apps, Cloud Solutions",
+            details: "Experienced in full-stack development,mobile applications, and cloud-native solutions.",
+            tools: [
+                "Java",
+                "Python",
+                "TypeScript",
+                "Kotlin",
+                "ReactJS",
+                "Next.js",
+                "Django",
+                "NodeJS",
+                "Docker",
+                "PostgreSQL"
+            ]
         },
         design: {
-            title: "FULL-STACK",
-            description: "Modern web development & scalable applications",
-            details: "Building responsive and performant web applications using React, Next.js, Node.js, and databases. Creating seamless user experiences with modern UI/UX principles.",
-            tools: ["React", "Next.js", "Node.js", "TypeScript", "MongoDB", "PostgreSQL", "TailwindCSS", "REST APIs", "Docker", "Git"]
+            title: "HARDWARE",
+            description: "Building connected devices and IoT solutions",
+            details: "Developing connected systems using hardware, sensors, embedded programming, and cloud integration.",
+            tools: [
+                "Arduino",
+                "ESP32",
+                "Raspberry Pi",
+                "Embedded C++",
+                "IoT",
+                "Sensors",
+                "Actuators",
+                "Robotics"
+            ]
         }
     }
 };
