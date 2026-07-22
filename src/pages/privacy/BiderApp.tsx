@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-import './Privacy.css';
+import '../Privacy.css';
 
 const Privacy = () => {
 

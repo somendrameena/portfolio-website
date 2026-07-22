@@ -8,8 +8,9 @@ const CharacterModel = lazy(() => import("./components/Character"));
 const MainContainer = lazy(() => import("./components/MainContainer"));
 const MyWorks = lazy(() => import("./pages/MyWorks"));
 const Play = lazy(() => import("./pages/Play"));
-const TaskFlowPrivacy = lazy(() => import("./pages/taskflow/Privacy"));
-const BiderAppPrivacy = lazy(() => import("./pages/bider/Privacy"));
+const TaskFlowPrivacy = lazy(() => import("./pages/privacy/TaskFlow"));
+const BiderAppPrivacy = lazy(() => import("./pages/privacy/BiderApp"));
+const AmsPrivacy = lazy(() => import("./pages/privacy/AttendanceManagement"));
 import { LoadingProvider } from "./context/LoadingProvider";
 
 const App = () => {
@@ -47,7 +48,7 @@ const App = () => {
           }
         />
         <Route
-          path="/taskflow/privacy"
+          path="/privacy/taskflow"
           element={
             <Suspense fallback={<div>Loading...</div>}>
               <TaskFlowPrivacy />
@@ -55,10 +56,18 @@ const App = () => {
           }
         />
         <Route
-          path="/bider/privacy"
+          path="/privacy/bider"
           element={
             <Suspense fallback={<div>Loading...</div>}>
               <BiderAppPrivacy />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/privacy/cb-ams"
+          element={
+            <Suspense fallback={<div>Loading...</div>}>
+              <AmsPrivacy />
             </Suspense>
           }
         />
