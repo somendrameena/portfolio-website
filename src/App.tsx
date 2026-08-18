@@ -11,6 +11,7 @@ const Play = lazy(() => import("./pages/Play"));
 const TaskFlowPrivacy = lazy(() => import("./pages/privacy/TaskFlow"));
 const BiderAppPrivacy = lazy(() => import("./pages/privacy/BiderApp"));
 const AmsPrivacy = lazy(() => import("./pages/privacy/AttendanceManagement"));
+const CBWorkspacePrivacy = lazy(() => import("./pages/privacy/CBWorkspace"));
 import { LoadingProvider } from "./context/LoadingProvider";
 
 const App = () => {
@@ -68,6 +69,14 @@ const App = () => {
           element={
             <Suspense fallback={<div>Loading...</div>}>
               <AmsPrivacy />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/privacy/cb-workspace"
+          element={
+            <Suspense fallback={<div>Loading...</div>}>
+              <CBWorkspacePrivacy />
             </Suspense>
           }
         />
